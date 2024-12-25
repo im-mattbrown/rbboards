@@ -11,9 +11,22 @@
   align-items: center;
   justify-items: center;
   min-height: 100svh;
-  padding: 80px;
   gap: 64px;
   font-family: var(--font-geist-sans);
+}
+
+.logo {
+  width: 100vw;
+  height: auto;
+}
+
+.title {
+  position: absolute;
+  top: 280px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fefefe;
+  font-size: 80px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -68,10 +81,7 @@
   padding: 0 20px;
   border: none;
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
